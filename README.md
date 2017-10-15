@@ -1,5 +1,4 @@
 # N Queens and Walls
----
 
 DFS, BFS and Simulated Annealing implementation of an extension of the N-Queens Problem. 
 
@@ -13,7 +12,7 @@ It is possible to add the number of Queens greater than the dimension of the boa
 - Simulated Annealing
 
 ## Input File Structure
----
+
 The file input.txt in the current directory of your program will be formatted as follows:
 
 - **First line**: instruction of which algorithm to use: BFS, DFS or SA
@@ -22,13 +21,28 @@ The file input.txt in the current directory of your program will be formatted as
 - **Next N lines**: the N x N board, one file line per row (to show you where the walls are). It will have a 0 where there is nothing, and a 2 where there is a wall.
 
 ##  Output File Structure
---- 
+ 
 The file output.txt which your program creates in the current directory should be formatted as follows:
 - **First line**: OK or FAIL, indicating whether a solution was found or not. If FAIL, any following lines are ignored.
 - **Next N lines**: the n x n nursery, one line in the file per nursery row, including the baby lizards and trees. It will have a 0 where there is nothing, a 1 where you placed a baby lizard, and a 2 where there is a tree.
 
+## Execution
+
+Change the file path on line 330 in the code:
+
+```
+	lines = tuple(open(`<input file name>`, 'r'))
+
+```
+
+Run the file with the following command:
+
+```
+	$ python queens_n_walls.py
+```
+
 ## Examples
----
+
 
 Here is a sample input file:
 ```
