@@ -31,14 +31,13 @@ The file output.txt which your program creates in the current directory should b
 Change the file path on line 330 in the code:
 
 ```
-	lines = tuple(open(`<input file name>`, 'r'))
-
+lines = tuple(open(`<input file name>`, 'r'))
 ```
 
 Run the file with the following command:
 
 ```
-	$ python queens_n_walls.py
+$ python queens_n_walls.py
 ```
 
 ## Examples
